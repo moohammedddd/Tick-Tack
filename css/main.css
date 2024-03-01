@@ -1,0 +1,65 @@
+*{
+ background-color: blueviolet;
+}
+.train{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+.train .title{
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(185, 15, 41);
+    z-index:2;
+    
+}
+.train span{
+    color: rgb(17, 22, 104);
+
+}
+.game{
+    text-align: center;
+    width:500px;
+    height: 500px;
+    background-color: rgb(185, 15, 41);
+    display:flex;
+flex-wrap: wrap;
+ gap:2px;
+ justify-content: center;
+ border: solid 3px rgb(211, 20, 20);
+font-weight: 500px;
+
+}
+
+.game .squair{
+font-size: 100px;
+color: white;
+ background-color:  rgb(60, 38, 160);
+ flex-basis:calc(33%);/* كده 3 فى الشاشه*/
+
+
+
+}
+.squair:hover{
+    background-color: wheat;
+}
+@media (max-width: 767px) {
+  .game{
+    width: 500px;
+    height: 573px;
+    display: flex;
+    margin-right: -88px;
+    margin-bottom: 20px;
+    margin-bottom: -196px;
+    position: absolute;
+    bottom: 159px;
+  }
+  .title{
+    position: absolute;
+    top: 20px;
+    left: 30%;
+  }
+}
